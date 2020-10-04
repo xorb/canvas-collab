@@ -4,13 +4,19 @@
 	"main": "index.js",
 	"license": "MIT",
 	"scripts": {
-		"dev": "ts-node-dev  src"
+		"dev": "ts-node-dev  src",
+		"build": "tsc",
+		"start": "node dist",
+		"postinstall": "tsc"
 	},
 	"devDependencies": {
 		"@types/socket.io": "^2.1.11",
 		"ts-node": "^9.0.0",
 		"ts-node-dev": "^1.0.0-pre.63",
 		"typescript": "^4.0.3"
+	},
+	"engines": {
+		"node": "14.0.0"
 	},
 	"dependencies": {
 		"socket.io": "^2.3.0"
